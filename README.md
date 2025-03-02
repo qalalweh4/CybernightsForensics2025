@@ -21,11 +21,11 @@ We then list the block devices to confirm that the VHDX file has been successful
 
 
 lsblk
-Output:
+
 ![Screenshot 2025-03-02 043945](https://github.com/user-attachments/assets/6ab4a83f-1c82-4663-9ce3-926acfab74e6)
 
 
-...
+
 Step 4: Mount the NBD Partition
 With the VHDX file connected, we mount the partition from the NBD device to access its contents.
 
@@ -54,14 +54,17 @@ cd LocalCache/Roaming/ChatGPT/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb
 
 
 Step 8: List the Contents of the Directory
+
 Listing the contents of the directory revealed several files, including a log file named 000003.log.
 
 
 Output:
+
 000003.log  CURRENT  LOCK  LOG  MANIFEST-000001
 
 
 Step 9: Extract the Flag
+
 Finally, I read the contents of the 000003.log file, which contained the hidden flag within the stored conversations.
 
 ![Screenshot 2025-03-02 044349](https://github.com/user-attachments/assets/fe3e3dc6-d695-449f-b2db-cd0f2b0d80e9)
