@@ -124,5 +124,45 @@ Using Cyberchef i get the flag
 
 
 
+Ransom - CyberNight 2025 Forensics CTF
+Objective
+A client experienced a ransomware attack and is now working to contain the breach while determining how the threat actor infiltrated their servers and what actions were taken afterward. Are you ready to take on this challenge?
+
+Walkthrough
+
+Step 1: Explore the File System
+
+I began exploring the file system for any suspicious or interesting files. I navigated to the vmfs directory, which is commonly used in VMware environments.
+
+![Screenshot 2025-03-02 042954](https://github.com/user-attachments/assets/3b5cb6cc-7459-4103-a5e8-9c7474db3b67)
+
+![Screenshot 2025-03-02 043003](https://github.com/user-attachments/assets/0c2a1ac9-da6c-4d92-a366-cbc70e0c0a73)
+
+![Screenshot 2025-03-02 043011](https://github.com/user-attachments/assets/ef81a76c-d85d-4be1-bcd0-10e37f16d836)
+
+![Screenshot 2025-03-02 043020](https://github.com/user-attachments/assets/f083ae19-46c5-4d6a-90e8-bcde7a713bf3)
+
+Step 3: Analyze the shell.log File
+
+I focused on the shell.log file.
+
+![Screenshot 2025-03-02 043040](https://github.com/user-attachments/assets/282b528b-5ee2-488d-a126-3b2c45e1164b)
+
+This log revealed that an interactive shell session was started, and a file named amd64.out was executed with a password parameter.
+
+Step 4: Decode the Password
+
+The password parameter in the log appears to be a hexadecimal string. I used CyberChef to decode it.
+
+![Screenshot 2025-03-02 043128](https://github.com/user-attachments/assets/244252f9-c5b7-4692-96fa-6ed34918439b)
+
+0xQalalweh is here unlocking secrets, one file at a time.
+
+
+
+
+
+
+
 
 
