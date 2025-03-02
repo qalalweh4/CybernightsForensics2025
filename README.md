@@ -31,6 +31,7 @@ With the VHDX file connected, we mount the partition from the NBD device to acce
 
 
 sudo mount /dev/nbd0p1 /mnt
+
 Step 5: Search for Chat-Related Data
 Given the objective of finding stored conversations, I began searching for any directories or files related to chat applications. This led me to the AppData directory, which often contains user-specific application data.
 
