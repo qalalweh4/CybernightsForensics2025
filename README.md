@@ -1,8 +1,8 @@
 # CybernightsForensics2025
 Solving forensics
 
-##Historian - CyberNight 2025 Forensics CTF
-###Objective
+## Historian - CyberNight 2025 Forensics CTF
+### Objective
 In this challenge, participants are tasked with analyzing a VHDX file to uncover stored conversations. The goal is to extract the flag hidden in any chats.
 
 Walkthrough
