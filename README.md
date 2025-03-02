@@ -1,3 +1,5 @@
+# 0xQalalweh is here unlocking secrets, one file at a time.
+
 # CybernightsForensics2025
 Solving forensics
 
@@ -172,7 +174,7 @@ The password parameter in the log appears to be a hexadecimal string. I used Cyb
 
 ![Screenshot 2025-03-02 043128](https://github.com/user-attachments/assets/244252f9-c5b7-4692-96fa-6ed34918439b)
 
-0xQalalweh is here unlocking secrets, one file at a time.
+
 
 
 
