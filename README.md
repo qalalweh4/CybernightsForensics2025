@@ -71,3 +71,52 @@ Finally, I read the contents of the 000003.log file, which contained the hidden 
 
 
 
+## Exfiltrator - CyberNight 2025 Forensics CTF
+### Objective
+A secure system has been compromised. Investigators detected unauthorized sessions, but no files were transferred. However, traces suggest activity for data exfiltration. Follow the attacker’s steps and extract the hidden flag.
+
+## Walkthrough
+Step 1: Explore the File System
+After mounting the VHDX file (similar to the Historian challenge), I began exploring the file system for any suspicious or interesting files. I navigated to the Users/FlagYard directory, which is often a target for attackers.
+
+![Screenshot 2025-03-02 042027](https://github.com/user-attachments/assets/1542b70f-b371-4fa4-8ada-23b5dff0227a)
+
+
+cd /mnt/C/Users/FlagYard
+Step 2: Investigate the Recent Folder
+I checked the Recent folder, which stores shortcuts to recently accessed files. This can provide clues about the attacker's activities.
+
+
+cd /mnt/C/Users/FlagYard/AppData/Roaming/Microsoft/Windows/Recent
+Using the lnkinfo tool, I analyzed the Top_Secret_File.txt.lnk file to see if it contained any useful information.
+
+
+Output:
+
+![Screenshot 2025-03-02 042153](https://github.com/user-attachments/assets/db74f646-6800-458c-b449-4171d974c0fd)
+
+This revealed that the attacker accessed a file named Top_Secret_File.txt.txt on the desktop.
+
+
+Step 4: Search for Suspicious Files
+I decided to search for other suspicious files or directories. I found a folder named FlagYard.l in the ConnectedDevicesPlatform directory.
+
+![Screenshot 2025-03-02 042257](https://github.com/user-attachments/assets/44ebbd38-1649-463a-80dd-5b65dc7addd1)
+
+Step 5: Analyze the ActivitiesCache.db File
+Inside the FlagYard.l folder, I found a file named ActivitiesCache.db. This file often contains logs of user activities, which could include traces of the attacker's actions.
+
+![Screenshot 2025-03-02 042430](https://github.com/user-attachments/assets/629c9bf8-95bf-4768-8301-5db13c3368f9)
+
+Step 6: Extract Information from ActivitiesCache.db
+I used the strings command to search for any references to the flag or suspicious activity.
+
+I found this string that is base64 
+Using Cyberchef i get the flag
+
+![Screenshot 2025-03-02 043736](https://github.com/user-attachments/assets/0b5d1c5f-b9f0-4b2d-b8a3-029ed4c10cc0)
+
+
+
+
+
