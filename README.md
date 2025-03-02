@@ -44,6 +44,7 @@ Within the Packages directory, I found a folder named OpenAI.ChatGPT-Desktop_2p2
 
 
 cd OpenAI.ChatGPT-Desktop_2p2ngsdoc76g0/
+
 Step 7: Navigate to the IndexedDB Directory
 I navigated further into the directory structure to locate the IndexedDB folder, which is commonly used by web applications to store large amounts of structured data.
 
